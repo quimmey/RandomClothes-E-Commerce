@@ -877,6 +877,52 @@ a:focus {
   font-size: 18px;
 }
 
+.form-control {
+  margin-bottom: -7px;
+  border-radius: 20px;
+}
+
+element.style {
+  flex-direction: column;
+}
+
+.body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #6f6f6e;
+}
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.js_loginContainer{
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 20px;
+  padding: 50px;
+  min-height: 50%;
+}
+
+.btn.btn-login{
+  color:#FFFFFF;
+  background: #DC1E0F;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 16px;
+}
+
+
+
 .footer_section .footer_social a:hover {
   color: #f7444e;
 }

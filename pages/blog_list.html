@@ -74,58 +74,51 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="full">
-                     <h3>Blog List</h3>
+                     <h3>Login</h3>
                   </div>
                </div>
             </div>
          </div>
       </section>
       <!-- end inner page section -->
-      <!-- why section -->
-      <section class="why_section layout_padding">
-         <div class="container">
-            <div class="heading_container heading_center">
-               <h2>
-                  Why Shop With Us
-               </h2>
-            </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="box ">
-                     <div class="img-box">
-                       
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Fast Delivery
-                        </h5>
-                        <p>
-                           variations of passages of Lorem Ipsum available
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box ">
-                     <div class="img-box">
-                       
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Best Quality
-                        </h5>
-                        <p>
-                           variations of passages of Lorem Ipsum available
-                        </p>
-                     </div>
+      <!--  section -->
+      <div class="col-sm-12 col-md-4 mx-auto text-center mb-6">
+         <div class="js_loginContainer loginContainerLoginPage d-flex justify-content-center"
+            style="flex-direction: column; margin-top: 55px; margin-bottom: 55px;">
+            <div class="yCmsContentSlot login-left-content-slot">
+               <div class="yCmsComponent login-left-content-component">
+                  <div class="login-section text-center">
+                     <h3 class="">
+                        ¿Tenés una cuenta?</h3>
+                     <br>
+                     <form id="loginForm" action="/j_spring_security_check" method="post">
+                        <div class="form-group">
+                           <input id="j_username" name="j_username" class=" form-control" placeholder="Ingresá tu Email"
+                              type="text" value="">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                           <input id="j_password" name="j_password" class="form-control" placeholder="Ingresá tu contraseña"
+                              type="password" value="" autocomplete="off">
+                        </div>
+                        <br>
+                        <br>
+                        <a href="#" data-link="/login/pw/request" class="js-password-forgotten forget-pass"
+                           data-cbox-title="¿Olvidaste tu contraseña? ">¿Olvidaste tu contraseña?</a>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-login">Iniciar Sesión</button>
+      
+      
+      
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <!-- end why section -->
+      </div>   
+      <!--  section -->
       <!-- footer section -->
-      <footer class="footer_section">
+      <footer class="container-fluid footer_section">
          <div class="container">
             <div class="row">
                <div class="col-md-4 footer-col">
