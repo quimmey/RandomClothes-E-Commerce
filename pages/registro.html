@@ -13,13 +13,13 @@
       <link rel="shortcut icon" href="../images/favicon.png" type="">
       <title>Random Clothes - login</title>
       <!-- bootstrap core css -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-   <!-- font awesome style -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
-   <!-- Custom styles for this template -->
-   <link href="css/style.css" rel="stylesheet" />
-   <!-- responsive style -->
-   <link href="css/responsive.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="../css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="../css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="../css/responsive.css" rel="stylesheet" />
    </head>
    <body class="sub_page">
       <div class="hero_area">
@@ -82,40 +82,62 @@
       </section>
       <!-- end inner page section -->
       <!--  section -->
-      <div class="col-sm-12 col-md-4 mx-auto text-center mb-6">
+      <div class="col-md-5 mx-auto text-center mb-5">
          <div class="js_loginContainer loginContainerLoginPage d-flex justify-content-center"
-            style="flex-direction: column; margin-top: 55px; margin-bottom: 55px;">
-            <div class="yCmsContentSlot login-left-content-slot">
-               <div class="yCmsComponent login-left-content-component">
-                  <div class="login-section text-center">
-                     <h3 class="">
-                        ¿Tenés una cuenta?</h3>
-                     <br>
-                     <form id="loginForm" action="/j_spring_security_check" method="post">
+            style="flex-direction: column; margin-top: 55px;">
+            <div class="yCmsContentSlot login-right-content-slot">
+               <div class="yCmsComponent login-right-content-component">
+                  <div class="register__section text-center">
+                     <h3><b>Crear cuenta de usuario</b></h3>
+                     <p> Disfrutá de una compra rápida y personalizada, aprovecha nuestros descuentos y promociones especiales
+                        para vos.</p>
+      
+                     <form id="naldoRegisterForm" action="/login/register" method="post">
                         <div class="form-group">
-                           <input id="j_username" name="j_username" class=" form-control" placeholder="Ingresá tu Email"
+                           <input id="register.firstName" name="firstName" class="form-control form-control"
+                              placeholder="Nombre" type="text" value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="register.lastName" name="lastName" class="form-control form-control"
+                              placeholder="Apellido" type="text" value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="register.dni" name="dni" class="form-control form-control" placeholder="DNI" type="text"
+                              value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="register.email" name="email" class="form-control form-control" placeholder="Mail"
+                              type="text" value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="password" name="pwd" class="form-control password-strength" placeholder="Contraseña"
+                              type="password" value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="password" name="adress" class="form-control form-control " placeholder="Dirección"
+                              type="text" value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="password" name="City" class="form-control form-control" placeholder="Ciudad" type="text"
+                              value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="password" name="State" class="form-control form-control" placeholder="Provincia"
+                              type="text" value="">
+                        </div>
+                        <div class="form-group">
+                           <input id="password" name="Zip" class="form-control form-control" placeholder="Código Postal"
                               type="text" value="">
                         </div>
                         <br>
-                        <div class="form-group">
-                           <input id="j_password" name="j_password" class="form-control" placeholder="Ingresá tu contraseña"
-                              type="password" value="" autocomplete="off">
-                        </div>
-                        <br>
-                        <br>
-                        <a href="#" data-link="/login/pw/request" class="js-password-forgotten forget-pass"
-                           data-cbox-title="¿Olvidaste tu contraseña? ">¿Olvidaste tu contraseña?</a>
-                        <br>
-                        <br>
-                        <button type="submit" class="btn btn-login">Iniciar Sesión</button>
-      
-      
-      
+                        <button type="submit" class="btn btn-registro">Registrarse</button>
+                        </form>
                   </div>
                </div>
             </div>
          </div>
-      </div>   
+      </div>
+                 
       <!--  section -->
       <!-- footer section -->
       <footer class="container-fluid footer_section">
