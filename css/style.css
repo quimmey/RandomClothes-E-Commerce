@@ -914,12 +914,23 @@ element.style {
 
 .btn.btn-login{
   color:#FFFFFF;
-  background: #DC1E0F;
+  background: #f7444e;
   padding: 8px 20px;
   font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 16px;
 }
+
+.btn.btn-registro{
+  color:#FFFFFF;
+  background: #f7444e;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 16px;
+}
+
+
 
 
 
