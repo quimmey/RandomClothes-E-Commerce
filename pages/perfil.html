@@ -20,7 +20,7 @@
       <link href="../css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="../css/responsive.css" rel="stylesheet" />
- 
+     
    </head>
    <body class="sub_page">
       <div class="hero_area">
@@ -85,7 +85,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="full">
-                     <h3>Carrito</h3>
+                     <h3>Mi perfil</h3>
                   </div>
                </div>
             </div>
@@ -96,106 +96,87 @@
       
 
 
-
-
-
-
+      <!-------------------------------------MAIN------------------------------------------------------------------------------------------------------------------------------------------->
       
-      <!-------------------------------MAIN--------------------------------------------------------------------------------------------------------------------------------------------->
-      
-        <main class="carrito">
-
-            <section class="sec-carrito">
+      <main class="perfil">
+         
+         <section class="info-cuenta">
                   
-                <h3>Carrito (<span>2</span>)</h3>
+            <div class="info-heading">
+
+               <h2>Información de cuenta</h2>
+               <a href="" data-toggle="modal" data-target="#myModal">Editar </a>
+               <a href="" data-toggle="modal" data-target="#contra">Cambiar contraseña </a>
+
+            </div>
+                  
+            <hr>
+
+            <p class="nombre-bold">Nombre Apellido</p>
+            <p>email@gmail.com</p>
+                  
+         </section>
+
+         <section class="datos-cuenta">
+                  
+            <div class="datos-heading">
+
+               <h2>Datos del comprador</h2>
+               <a href="">Editar</a>
+
+            </div>
+                 
             
-                <hr>
+            <hr>
 
-                <div class="productos-carrito">
-
-                    <article>
-                        <div class="info-prod">
-
-                            <h3>Nombre del producto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eaque deleniti officia.</p>
-                            <a href="">Eliminar</a>
-
-                        </div>
-
-                        <div class="cantidad-prod">
-
-                            <button id='disminuir'>-</button>
-                            <input type='text' value='1' class="input-cantidad" >
-                            <button id='aumentar'>+</button>
-
-                        </div>
-
-                        <div class="precio-prod">
-
-                            <p>$<span>0</span></p>
-
-                        </div>
-
-                    </article>
-
-                    <hr>
-
-                    <article>
-                        <div class="info-prod">
-
-                            <h3>Nombre del producto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eaque deleniti officia.</p>
-                            <a href="">Eliminar</a>
-
-                        </div>
-
-                        <div class="cantidad-prod">
-
-                            <button id='disminuir'>-</button>
-                            <input type='text' value='1' class="input-cantidad" >
-                            <button id='aumentar'>+</button>
-
-                        </div>
-
-                        <div class="precio-prod">
-
-                            <p>$<span>0</span></p>
-
-                        </div>
-
-                    </article>
-
-                    <hr>
-
-                    <div class="total-carrito">
-
-                        <h3>Total:</h3>
-                         <p>$<span>0</span></p>
-
-                    </div>
-                        
-            
-                </div>
-            
-                
-                <hr>
-
-                <div class="button-carrito">
-                    <button class="btn btn-primary">Continuar compra</button>
-                </div>
-            
-
-            </section> 
+            <p>Nombre Apellido</p>
+            <p>Calle Falsa 123</p>
+            <p>Ciudad</p>
+            <p>Provincia</p>
+            <p> Codigo postal: <span>1511</span> </p>
+            <p> DNI: <span>12034531</span> </p>
+               
+         </section> 
   
-            <section class="medios-de-pago">
 
-                <h3>Medios de pago</h3>
-                <p>Podes pagar con tarjetas de crédito o débito, efectivo o transferencia bancaria.</p>
-                <br>
-                <img src="../images/medios-de-pago.png" alt="Medios de pago">
 
-            </section>
-        </main>
+         <!--MODAL EDITAR-->
+
+         <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Editar información de la cuenta</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                  <form>
+                     <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                     </div>
+
+                     <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                     </div>
+                     <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </form>
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Guardar cambios</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+
+
+      </main>
 
 
 
