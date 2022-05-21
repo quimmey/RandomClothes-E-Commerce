@@ -1888,9 +1888,7 @@
             continue;
           }
 
-          if (event && (event.type === 'click' && /input|textarea/i.test(event.target.tagName) || event.type === 'keyup' && event.which === TAB_KEYCODE) && $.contains(parent, event.target)) {
-            continue;
-          }
+         
 
           var hideEvent = $.Event(Event$4.HIDE, relatedTarget);
           $(parent).trigger(hideEvent);
