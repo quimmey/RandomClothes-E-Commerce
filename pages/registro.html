@@ -13,13 +13,12 @@
       <link rel="shortcut icon" href="../images/favicon.png" type="">
       <title>Random Clothes - login</title>
       <!-- bootstrap core css -->
-      <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <!-- font awesome style -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
       <!-- Custom styles for this template -->
       <link href="../css/style.css" rel="stylesheet" />
-      <!-- responsive style -->
-      <link href="../css/responsive.css" rel="stylesheet" />
+
    </head>
    <body class="sub_page">
       <div class="hero_area">
@@ -85,7 +84,7 @@
       <section class="inner_page_head">
          <div class="container_fuild">
             <div class="row">
-               <div class="col-md-12">
+               <div class="col-lg-12">
                   <div class="full">
                      <h3>Registrarse</h3>
                   </div>
@@ -94,63 +93,86 @@
          </div>
       </section>
       <!-- end inner page section -->
-      <!--  section -->
-      <div class="col-md-5 mx-auto text-center mb-5">
-         <div class="js_loginContainer loginContainerLoginPage d-flex justify-content-center"
-            style="flex-direction: column; margin-top: 55px;">
-            <div class="yCmsContentSlot login-right-content-slot">
-               <div class="yCmsComponent login-right-content-component">
-                  <div class="register__section text-center">
-                     <h3><b>Crear cuenta de usuario</b></h3>
-                     <p> Disfrutá de una compra rápida y personalizada, aprovecha nuestros descuentos y promociones especiales
-                        para vos.</p>
-      
-                     <form id="naldoRegisterForm" action="/login/register" method="post">
-                        <div class="form-group">
-                           <input id="register.firstName" name="firstName" class="form-control form-control"
-                              placeholder="Nombre" type="text" value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="register.lastName" name="lastName" class="form-control form-control"
-                              placeholder="Apellido" type="text" value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="register.dni" name="dni" class="form-control form-control" placeholder="DNI" type="text"
-                              value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="register.email" name="email" class="form-control form-control" placeholder="Mail"
-                              type="text" value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="password" name="pwd" class="form-control password-strength" placeholder="Contraseña"
-                              type="password" value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="password" name="adress" class="form-control form-control " placeholder="Dirección"
-                              type="text" value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="password" name="City" class="form-control form-control" placeholder="Ciudad" type="text"
-                              value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="password" name="State" class="form-control form-control" placeholder="Provincia"
-                              type="text" value="">
-                        </div>
-                        <div class="form-group">
-                           <input id="password" name="Zip" class="form-control form-control" placeholder="Código Postal"
-                              type="text" value="">
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-registro">Registrarse</button>
-                        </form>
-                  </div>
+      <main class="container" style="margin-top: 3%; margin-bottom: 3%;">
+         <!-- FORMULARIO -->
+         <form class="row g-3 needs-validation" novalidate>
+             <div class="col-lg-6">
+                <label for="validationCustom01" class="form-label text-dark">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+               <div class="valid-feedback">
+                 Looks good!
                </div>
-            </div>
-         </div>
-      </div>
-                 
+               <div class="invalid-feedback">
+                 Please write your First Name.
+               </div>
+             </div>
+             <div class="col-lg-6">
+               <label for="validationCustom02" class="form-label text-dark">Last name</label>
+               <input type="text" class="form-control" id="validationCustom02" required>
+               <div class="valid-feedback">
+                 Looks good!
+               </div>
+               <div class="invalid-feedback">
+                 Please write your Last Name.
+               </div>
+             </div>
+             <div class="col-lg-6">
+               <label for="validationCustomUsername" class="form-label text-dark">Username</label>
+               <div class="input-group has-validation">
+                 <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                 <div class="invalid-feedback">
+                   Please choose a new username.
+                 </div>
+               </div>
+             </div>
+ 
+             <div class="col-lg-4">
+                 <label for="validationCustomPassword" class="form-label text-dark">Password</label>
+                 <div class="input-group has-validation">
+                   <input type="password" class="form-control" id="validationCustomPassword" required>
+                   <div class="invalid-feedback">
+                     Please choose a correct Password.
+                   </div>
+                 </div>
+             </div>
+            
+              
+             <div class="col-lg-6">
+               <label for="validationCustomEmail" class="form-label text-dark">Email address</label>
+               <div class="input-group has-validation">
+                 <span class="input-group-text" id="inputGroupPrepend">@</span>
+                 <input type="email" class="form-control" id="validationCustomEmail" required>
+                 <div class="invalid-feedback">
+                   Please choose a correct email.
+                 </div>
+               </div>
+           </div>
+ 
+             <div class="col-lg-6">
+               <label for="validationCustom03" class="form-label text-dark">City</label>
+               <input type="text" class="form-control" id="validationCustom03" required>
+               <div class="invalid-feedback">
+                 Please provide a valid city.
+               </div>
+             </div>
+
+             <div class="col-lg-6">
+               <div class="form-check">
+                 <input class="form-check-input me-auto" type="checkbox" value="" id="invalidCheck" required>
+                 <label class="form-check-label text-dark" for="invalidCheck">
+                   Agree to terms and conditions
+                 </label>
+                 <div class="invalid-feedback">
+                   You must agree before submitting.
+                 </div>
+               </div>
+             </div>
+             <div class="col-12">
+               <button class="btn btn-info" type="submit">Submit form</button>
+             </div>
+           </form>
+ 
+     </main>
       <!--  section -->
       <!-- footer section -->
       <footer class="container-fluid footer_section">
@@ -228,13 +250,12 @@
          </div>
       </footer>
       <!-- footer section -->
-     <!-- jQery -->
+      <!-- registro-->
+      <script src="../js/registro.js"></script>
+   
+      <!-- jQery -->
      <script src="../js/jquery-3.4.1.min.js"></script>
-     <!-- popper js -->
-     <script src="../js/popper.min.js"></script>
-     <!-- bootstrap js -->
-     <script src="../js/bootstrap.js"></script>
-     <!-- custom js -->
-     <script src="../js/custom.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
    </body>
 </html>
