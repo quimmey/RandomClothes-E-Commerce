@@ -34,6 +34,42 @@ const baseDeDatos = [
         nombre: 'Remeras oooo',
         precio: 2000,
         imagen: '../images/p12.png'
+    },
+    {
+        id: 7,
+        nombre: 'Buzos oversize',
+        precio: 3500,
+        imagen: '../images/p6.png'
+    },
+    {
+        id: 8,
+        nombre: 'Zapatillas',
+        precio: 2000,
+        imagen: '../images/p1.png'
+    },
+    {
+        id: 9,
+        nombre: 'Buzos',
+        precio: 2000,
+        imagen: '../images/p8.png'
+    },
+    {
+        id: 10,
+        nombre: 'Remeras',
+        precio: 2000,
+        imagen: '../images/p3.png'
+    },
+    {
+        id: 11,
+        nombre: 'Remeras hgf',
+        precio: 2000,
+        imagen: '../images/p10.png'
+    },
+    {
+        id: 12,
+        nombre: 'Remeras oooo',
+        precio: 2000,
+        imagen: '../images/p12.png'
     }
 
 ];
@@ -44,6 +80,7 @@ const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+const miLocalStorage = window.localStorage;
 
 // Funciones
 
@@ -94,6 +131,8 @@ function anyadirProductoAlCarrito(evento) {
     carrito.push(evento.target.getAttribute('marcador'))
     // Actualizamos el carrito 
     renderizarCarrito();
+     // Actualizamos el LocalStorage
+     guardarCarritoEnLocalStorage();
 
 }
 
@@ -123,8 +162,8 @@ function renderizarCarrito() {
         miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${divisa}${miItem[0].precio}`;
         // Boton de borrar
         const miBoton = document.createElement('button');
-        miBoton.classList.add('btn', 'btn-danger', 'mx-5');
-        miBoton.textContent = 'X';
+        miBoton.classList.add('btn', 'btn-danger', 'mx-6');
+        miBoton.textContent = '-';
         miBoton.style.marginLeft = '1rem';
         miBoton.dataset.item = item;
         miBoton.addEventListener('click', borrarItemCarrito);
@@ -148,6 +187,9 @@ function borrarItemCarrito(evento) {
     });
     // volvemos a renderizar
     renderizarCarrito();
+     // Actualizamos el LocalStorage
+     guardarCarritoEnLocalStorage();
+
 }
 
 /**
@@ -173,11 +215,28 @@ function vaciarCarrito() {
     carrito = [];
     // Renderizamos los cambios
     renderizarCarrito();
+    localStorage.clear();
+}
+
+// Eventos
+DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
+function guardarCarritoEnLocalStorage () {
+    miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function cargarCarritoDeLocalStorage () {
+    // ¿Existe un carrito previo guardado en LocalStorage?
+    if (miLocalStorage.getItem('carrito') !== null) {
+        // Carga la información
+        carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+    }
 }
 
 // Eventos
 DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
+cargarCarritoDeLocalStorage();
 renderizarProductos();
 renderizarCarrito();
