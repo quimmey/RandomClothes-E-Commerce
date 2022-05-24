@@ -96,15 +96,22 @@
       </section>
       <!-- end inner page section -->
       <!--  section -->
-      <main class="container" style="margin-top: 3%;">
-         <form action="#" id="formulario">
-           <div id="carrito" class="d-flex justify-content-between ">
-             
-           </div>
-           <input type="submit" value="Finalizar">
-         </form>
-           
-       </main>
+      <div class="container">
+         <div class="row">
+             <!-- Elementos generados a partir del JSON -->
+             <main id="items" class="col-sm-12 row"></main>
+             <!-- Carrito -->
+             <aside class="col-sm-4">
+                 <h2>Carrito</h2>
+                 <!-- Elementos del carrito -->
+                 <ul id="carrito" class="list-group"></ul>
+                 <hr>
+                 <!-- Precio total -->
+                 <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                 <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+             </aside>
+         </div>
+     </div>
 
       <!--  section -->
       <!-- footer section -->
