@@ -129,6 +129,7 @@ function renderizarProductos() {
 function anyadirProductoAlCarrito(evento) {
     // Anyadimos el Nodo a nuestro carrito
     carrito.push(evento.target.getAttribute('marcador'))
+    alert('Producto añadido al carrito!')
     // Actualizamos el carrito 
     renderizarCarrito();
      // Actualizamos el LocalStorage
