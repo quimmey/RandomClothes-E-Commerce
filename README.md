@@ -1,2 +1,4 @@
-# ProyectoG8
-Proyecto Integrador del Grupo 8 CaC
+## Random Clothes - eCommerce
+
+
+eCommerce realizado como proyecto integrador fullstack del curso JAVA (Codo a Codo 4.0)
