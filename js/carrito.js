@@ -39,37 +39,37 @@ const baseDeDatos = [
         id: 7,
         nombre: 'Buzos oversize',
         precio: 3500,
-        imagen: '../images/p6.png'
+        imagen: '../images/p2.png'
     },
     {
         id: 8,
         nombre: 'Zapatillas',
         precio: 2000,
-        imagen: '../images/p1.png'
+        imagen: '../images/p4.png'
     },
     {
         id: 9,
         nombre: 'Buzos',
         precio: 2000,
-        imagen: '../images/p8.png'
+        imagen: '../images/p7.png'
     },
     {
         id: 10,
         nombre: 'Remeras',
         precio: 2000,
-        imagen: '../images/p3.png'
+        imagen: '../images/p5.png'
     },
     {
         id: 11,
         nombre: 'Remeras hgf',
         precio: 2000,
-        imagen: '../images/p10.png'
+        imagen: '../images/p9.png'
     },
     {
         id: 12,
         nombre: 'Remeras oooo',
         precio: 2000,
-        imagen: '../images/p12.png'
+        imagen: '../images/p11.png'
     }
 
 ];
