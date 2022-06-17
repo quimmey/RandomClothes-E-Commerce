@@ -275,7 +275,7 @@ a:focus {
     font-size: 4.5rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #002c3e;
+    color: #1C3144;
     line-height: 70px;
 }
 
@@ -418,7 +418,7 @@ a:focus {
 
 .product_section .box .detail-box h6 {
   margin-top: 10px;
-  color: #002c3e;
+  color: #1C3144;
   font-weight: 600;
 }
 
@@ -533,7 +533,7 @@ a:focus {
 }
 
 .arrival_section .heading_container {
-  color: #002c3e;
+  color: #1C3144;
   margin-bottom: 10px;
 }
 
@@ -586,7 +586,7 @@ a:focus {
 .why_section .box {
     text-align: center;
     margin-top: 45px;
-    background-color: #002c3e;
+    background-color: #1C3144;
     padding: 45px 50px;
     border-radius: 5px;
     color: #ffffff;
@@ -624,7 +624,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #002c3e;
+  color: #1C3144;
 }
 
 .subscribe_section .subscribe_form .heading_container h2 {
@@ -973,7 +973,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #002c3e;
+  background-color: #1C3144;
   color: #ffffff;
   padding-top: 70px;
 }
@@ -1050,7 +1050,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #002c3e;
+  color: #1C3144;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -1348,8 +1348,4 @@ form input[type="submit"]:focus {
     font-size: 15px;
     font-weight: 400;
 }
-
-http://kute-themes.com/html/boutique/html/index.html
-https://template.hasthemes.com/noraure/noraure/index.html
-https://preview.hasthemes.com/xoss-preview/xoss/index.html
 
